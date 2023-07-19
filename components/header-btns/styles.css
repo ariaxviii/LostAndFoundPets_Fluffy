@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --background-main: #F3F3F1;
+  --text-input-field: #f7f7f7;
+  
+  --color-black: #222222;
+  --color-gray-dark:#666666;
+  --color-gray-primary: #aaaaaa;
+  --text-input-secondary: #eeeeee;
+
+  --color-extra-light:#DED2BC;
+  --color-light:#D6B087;
+  --color-main:#9F633D;
+  --color-secondary:#4F2920;
+  --font-color-main :#232830;
+
+  --color-warning:#f82e2e;
+
+  --font-color-light: #ffffff;
+  --font-color-disable :#c0c0c0;
+
+  --font-size-s: 1.4rem;
+  --font-size-m: 2rem;
+  --font-size-l: 2.4rem;
+  
+  --s: 0.4rem;
+  --m: 0.8rem;
+  --l: 1.6rem;
+  --xl: 2.4rem;
+  --xxl: 3.6rem;
+
+  /* Efecto_sombra */
+  --box-shadow-extern: 
+    -12px -12px 20px 0px rgba(255, 255, 255, 0.80),
+    10px 10px 20px 0px rgba(166, 180, 200, 0.70);
+   /* Sombra_interna */
+  --box-shadow-intern:
+    -5px -5px 15px 0px rgba(255, 255, 255, 0.80) inset,
+    5px 5px 10px 0px rgba(166, 180, 200, 0.70) inset;
+}
+
+.heder-container{
+  height: 10rem;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  
+}
+
+.heder__container-btns{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+.header_btn_shoppin-cart,
+.header_btn_fav,
+.header_btn_alerts {
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: var(--font-size-l);
+  color: var(--color-black);
+  box-shadow: var(--box-shadow-extern);
+
+}
+.header_btn_shoppin-cart:hover,
+.header_btn_fav:hover,
+.header_btn_alerts:hover{
+  color: var(--color-light);
+  box-shadow: var(--box-shadow-intern);
+}
+
+.header__user{
+  display: flex;
+  align-items: center;
+  gap: var(--l);
+}
+.header__user p{
+  font-size: var(--font-size-s);
+  font-weight: 500;
+}
+
+.header__btn-user{
+  display: grid;
+  place-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: var(--font-size-m);
+  color: var(--color-main);
+  box-shadow: var(--box-shadow-extern);
+  font-size: var(--font-size-l);
+  
+}
+.header__btn-user:hover{
+  color: var(--color-light);
+  box-shadow: var(--box-shadow-intern);
+
+}
+
+

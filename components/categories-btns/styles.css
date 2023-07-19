@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --background-main: #f3f3f1;
+  --text-input-field: #f7f7f7;
+
+  --color-black: #222222;
+  --color-gray-dark: #666666;
+  --color-gray-primary: #aaaaaa;
+  --text-input-secondary: #eeeeee;
+
+  --color-extra-light: #ded2bc;
+  --color-light: #d6b087;
+  --color-main: #9f633d;
+  --color-secondary: #4f2920;
+  --font-color-main: #232830;
+
+  --color-warning: #f82e2e;
+
+  --font-color-light: #ffffff;
+  --font-color-disable: #c0c0c0;
+
+  --font-size-s: 1.4rem;
+  --font-size-m: 2rem;
+  --font-size-l: 2.4rem;
+
+  --s: 0.4rem;
+  --m: 0.8rem;
+  --l: 1.6rem;
+  --xl: 2.4rem;
+  --xxl: 3.6rem;
+
+  /* Efecto_sombra */
+  --box-shadow-extern: -12px -12px 20px 0px rgba(255, 255, 255, 0.8),
+    10px 10px 20px 0px rgba(166, 180, 200, 0.7);
+  /* Sombra_interna */
+  --box-shadow-intern: -5px -5px 15px 0px rgba(255, 255, 255, 0.8) inset,
+    5px 5px 10px 0px rgba(166, 180, 200, 0.7) inset;
+}
+
+.categories-container {
+  /* Estilos para el contenedor de categorías */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.categories-container h3 {
+  /* Estilos para el título "Categorias" */
+  font-size: var(--font-size-s);
+  color: var(--color-gray-dark);
+}
+
+.categories__btns-container {
+  /* Estilos para el contenedor de los botones de categoría */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.categories__btn {
+  /* Estilos para cada botón de categoría */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 8rem;
+}
+
+.categories__icon {
+  /* Estilos para el contenedor del icono de categoría */
+
+  display: grid;
+  place-content: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-extern);
+  font-size: var(--font-size-l);
+  color: var(--color-main);
+  transition: all 300ms;
+}
+.categories__icon:hover {
+  box-shadow: var(--box-shadow-intern);
+  color: var(--color-light);
+}
+
+.categories__text {
+  /* Estilos para el texto de categoría */
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  color: var(--color-gray-dark);
+}

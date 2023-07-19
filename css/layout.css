@@ -1,0 +1,41 @@
+/* --------------------------------- Desktop -------------------------------- */
+.body__container{
+  display: grid;
+  grid-template-rows: 8rem;
+  
+  grid-template-areas:
+    "aside-menu header  header header header  header header  header  header  header  header header" 
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+  ;
+  
+}
+
+.heder-container{
+  grid-area:  header;
+  margin-left: 15rem;
+  
+}
+
+.menu-container{
+  grid-area:  aside-menu;
+  position: fixed;
+
+  
+}
+.main-container{
+  grid-area: main;
+  margin-left: 15rem;
+  
+  
+}
+
+main{
+  width: 1100px;
+  padding: 2rem;
+}

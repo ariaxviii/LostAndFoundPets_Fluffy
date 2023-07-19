@@ -1,0 +1,7 @@
+td img{
+    width: 40px;
+    
+}
+td:last-child{
+  text-align: end;
+}

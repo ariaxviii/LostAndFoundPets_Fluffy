@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- -------------------------------- cdns --------------------------------- -->
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------------------------------- fonts -------------------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------------- css --------------------------------- -->
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="./components/search-bar/styles.css">
+  <link rel="stylesheet" href="./components/side-bar-menu/styles.css">
+  <link rel="stylesheet" href="./components/header-btns/styles.css">
+  <link rel="stylesheet" href="./components/slider-home/styles .css">
+  <link rel="stylesheet" href="./components/section_brands/styles.css">
+
+  <link rel="stylesheet" href="./components/product-card/styles.css">
+  <link rel="stylesheet" href="./components/product-card/styles.css">
+  <link rel="icon" type="image/x-icon" href="./img/Imagotipo.png" />
+  <!-- ----------------------------------------------------------------------- -->
+  <title>Perdidos</title>
+</head>
+
+<body class='body__container'>
+  <header class='heder-container'>
+
+    <!-- -------------------------- barra de busqueda -------------------------- -->
+    <div class="main--searcher">
+
+      <div class="main-searcher__input-container search-container">
+
+        <p class='main--searcher__ico'>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </p>
+
+        <input type="text" id="search-input" placeholder=" Buscar mascotas, perdidas y encontradas ">
+
+        <ul id="suggestions-list"></ul>
+
+        </a>
+      </div>
+
+
+
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------ iconos  carrito user ------------------------- -->
+    <section class='header__btns'>
+      <div class='heder__container-btns'>
+        <a href="" class='header_btn_shoppin-cart'>
+          <i class="fa-solid fa-bag-shopping"></i>
+
+        </a>
+        <a href="" class='header_btn_fav'>
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="" class='header_btn_alerts'>
+          <i class="fa-regular fa-bell"></i>
+        </a>
+
+      </div>
+
+
+
+    </section>
+    <!-- fin Iconos ----------------------------------------------------------------------- -->
+    <div class="header__user">
+      <p>¡Bienvenido,<br> Usuario!</p>
+      <a href='https://ariaxviii.github.io/registroUsuario/' class='header__btn-user'>
+        <p></p>
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- -------------------------------- menu --------------------------------- -->
+  <aside class='menu-container'>
+    <nav class='menu__nav'>
+      <figure class=' menu__img-container'>
+        <img class='menu__img-icon' src="./img/Imagotipo.png" alt="Logo fluffy perrito" />
+      </figure>
+      <div class='menu__options-container'>
+
+
+        <a href='https://rafaelsolano.github.io/fluffytarea/' class="menu__item-text">
+          <h3>
+            <i class="fas fa-poll-h"></i>
+            <span>Inicio</span>
+          </h3>
+        </a>
+
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-dog"></i>
+            <span class="nav-item">Perro</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-cat"></i>
+            <span class="nav-item">Gato</span>
+          </h3>
+        </a>
+
+        <a  href='' id='menu__products' class="menu__item-text">
+          <h3>
+            <i class="fas fa-bone"></i>
+            <span class="nav-item">Productos</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-briefcase-medical"></i>
+            <span class="nav-item">Servicios</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-user-friends"></i>
+            <span class="nav-item">Nosotros</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fa-solid fa-phone"></i>
+            <span class="nav-item">Contacto</span>
+          </h3>
+        </a>
+      </div>
+
+      <a href='./index.html' class="menu__item-text active">
+        <h3>
+          <i class="fas fa-search"></i>
+          <span>Perdidos</span>
+        </h3>
+      </a>
+
+    </nav>
+  </aside>
+  <!-- fin menu ----------------------------------------------------------------------- -->
+
+  <main class='main-container'>
+
+    <section class='slider_container'>
+      
+      <div class="slider__slides">
+        <!-- 1 slider -->
+        <div class="slider__slide">
+          <img src="https://static01.nyt.com/images/2013/12/22/fashion/22DOGSCOMBO_SPAN/22DOGSCOMBO_SPAN-videoSixteenByNine1050.jpg">
+        </div>
+        <!-- 2 slider -->
+        <div class="slider__slide"> 
+          <img src="https://static01.nyt.com/images/2013/12/22/fashion/22DOGSCOMBO_SPAN/22DOGSCOMBO_SPAN-videoSixteenByNine1050.jpg">
+        
+        </div>
+        <!-- 3 slider -->
+        <div class="slider__slide">
+          <img src="https://static01.nyt.com/images/2013/12/22/fashion/22DOGSCOMBO_SPAN/22DOGSCOMBO_SPAN-videoSixteenByNine1050.jpg">
+        </div>
+      </div>
+    
+    
+
+  </section>
+
+    <!-- inicio---------------------------- cards marcas ----------------------------- -->
+    <section class='brands'>
+
+      <div class="brands__title">
+        <h2>¡Los más buscados!</h2>
+      </div>
+
+      <div class="container-brands">
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Honey</h4>
+            <h4><span class="title_description_card_img">Género:</span> Hembra</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 941000017048845</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Chapinero</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 321 765 7693</h4>
+          </list>        
+          
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/7/6/4/716886431.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Sneakers</h4>
+            <h4><span class="title_description_card_img">Género:</span> Macho</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 867000017048492</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Fontibon</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 315 347 0472</h4>
+          </list>
+          <img class='brand__card_img' src="https://media.ohmy.ca/media/cache/1400x1000/images/607c5313609031618760467.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Wukong</h4>
+            <h4><span class="title_description_card_img">Género:</span> Macho</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> N/A</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Galicia</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 311 811 1295</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/7/2/2/716886637.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Gigi</h4>
+            <h4><span class="title_description_card_img">Género:</span> Macho</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 992000001088080</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Marly</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 318 891 2646</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/a/c/1/716886390.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Jameson</h4>
+            <h4><span class="title_description_card_img">Género:</span> Macho</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 124000017048809</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Chicó</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 319 984 9812</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/4/3/c/716234752.jpg" alt="">
+        </div>
+
+        
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Posha</h4>
+            <h4><span class="title_description_card_img">Género:</span> Hembra</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 941000017048845</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Candelaria</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 321 765 7693</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/7/7/5/725302288.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Asia</h4>
+            <h4><span class="title_description_card_img">Género:</span> Hembra</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 990000001441047</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Chapinero</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 362 345 1183</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/d/5/5/725759324.jpg" alt="">
+        </div>
+
+        <div class="brand__card">
+          <list class="description_card_img">
+            <h4><span class="title_description_card_img">Nombre de Mascota:</span> Gus</h4>
+            <h4><span class="title_description_card_img">Género:</span> Macho</h4>
+            <h4><span class="title_description_card_img">Microchip:</span> 941000017497407</h4>
+            <h4><span class="title_description_card_img">Última ubicación conocida:</span> Madelena</h4>
+            <h4><span class="title_description_card_img">Contacto:</span> 312 145 9167</h4>
+          </list>
+          <img class='brand__card_img' src="https://pet-uploads.adoptapet.com/7/c/2/701537090.jpg" alt="">
+        </div>
+
+
+      </div>
+    </section>
+    <!-- fin cards brands ----------------------------------------------------------------------- -->
+    <!-- inicio ---------------------------- product cards ---------------------------- -->
+    <section class='container_product-card'>     
+
+      <div class='card-product'>
+        <figure>
+          <img class='card-product__img' src="https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7d/7d0829cb-7920-4678-8608-5c702d1ea739?rule=kijijica-640-webp" alt="">
+        </figure>
+        <div class="card-product__content-txt">
+
+          <div class='card-product__text-main'>
+
+            <p class='card-product__title'>¡Encontrado!</p>
+            <p class='card-product__stars'>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+
+          <div class='card-product__footer'>
+            <div class='card-product__total'>
+              <p> Pitbull, 4 meses</p>
+            </div>
+
+            <div class='card-product__btn-cont'>
+              <p class='card-product__btn-add-shopping'>
+                <i class="fab fa-telegram-plane"></i>
+              </p>
+              <p id='fav-icon' class='card-product__btn-add-fav'>
+                <i id='fav-i' class="fa-regular fa-heart"></i>
+                <!--Corazon ative  <i class="fa-solid fa-heart"></i> -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class='card-product'>
+        <figure>
+          <img class='card-product__img' src="https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/de/deac8383-a24a-44e9-a950-679e0d2c1ec0?rule=kijijica-640-webp" alt="">
+        </figure>
+        <div class="card-product__content-txt">
+
+          <div class='card-product__text-main'>
+
+            <p class='card-product__title'>¡Encontrado!</p>
+            <p class='card-product__stars'>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+
+          <div class='card-product__footer'>
+            <div class='card-product__total'>
+              <p> Dálmata, 3 meses</p>
+            </div>
+
+            <div class='card-product__btn-cont'>
+              <p class='card-product__btn-add-shopping'>
+                <i class="fab fa-telegram-plane"></i>
+              </p>
+              <p id='fav-icon' class='card-product__btn-add-fav'>
+                <i id='fav-i' class="fa-regular fa-heart"></i>
+                <!--Corazon ative  <i class="fa-solid fa-heart"></i> -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class='card-product'>
+        <figure>
+          <img class='card-product__img' src="https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c4/c4ef4fca-6f37-42ec-b673-5349bfe3c35c?rule=kijijica-640-webp" alt="">
+        </figure>
+        <div class="card-product__content-txt">
+
+          <div class='card-product__text-main'>
+
+            <p class='card-product__title'>¡Encontrado!</p>
+            <p class='card-product__stars'>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+
+          <div class='card-product__footer'>
+            <div class='card-product__total'>
+              <p> Maltese, 8 meses</p>
+            </div>
+
+            <div class='card-product__btn-cont'>
+              <p class='card-product__btn-add-shopping'>
+                <i class="fab fa-telegram-plane"></i>
+              </p>
+              <p id='fav-icon' class='card-product__btn-add-fav'>
+                <i id='fav-i' class="fa-regular fa-heart"></i>
+                <!--Corazon ative  <i class="fa-solid fa-heart"></i> -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+  </main>
+  
+  <script src='./components/search-bar/script.js'></script>
+  <script src='./components/side-bar-menu/script.js'></script>
+  <script src='./components/slider-home/script.js'></script>
+  <script src='./components/section_brands/script.js'></script>
+  <script src='./components/product-card/script.js'> </script>
+
+</body>
+
+</html

@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* list-style: none; */
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --background-main: #f3f3f1;
+  --text-input-field: #f7f7f7;
+
+  --color-black: #222222;
+  --color-gray-dark: #666666;
+  --color-gray-primary: #aaaaaa;
+  --text-input-secondary: #eeeeee;
+
+  --color-extra-light: #ded2bc;
+  --color-light: #d6b087;
+  --color-main: #9f633d;
+  --color-secondary: #4f2920;
+  --font-color-main: #232830;
+
+  --color-warning: #f82e2e;
+
+  --font-color-light: #ffffff;
+  --font-color-disable: #c0c0c0;
+
+  --font-size-s: 1.4rem;
+  --font-size-m: 2rem;
+  --font-size-l: 2.4rem;
+
+  --s: 0.4rem;
+  --m: 0.8rem;
+  --l: 1.6rem;
+  --xl: 2.4rem;
+  --xxl: 3.6rem;
+
+  /* Efecto_sombra */
+  --box-shadow-extern: -12px -12px 20px 0px rgba(255, 255, 255, 0.8),
+    10px 10px 20px 0px rgba(166, 180, 200, 0.7);
+  /* Sombra_interna */
+  --box-shadow-intern: -5px -5px 15px 0px rgba(255, 255, 255, 0.8) inset,
+    5px 5px 10px 0px rgba(166, 180, 200, 0.7) inset;
+
+
+
+
+    --color-background-1:#9f633d;
+  --color-background-2:#FFC9D9;
+  --color-background-3:#D9E5F2;
+  --color-background-light:#F6FAFF;
+  
+  --color-font-1:#181818;
+  --color-font-2:#e9e9e9;
+  --color-font-dark: #3a3a3a;
+  --color-font-light: #ffff;
+
+  --m-xl: 2rem;
+}
+
+.body__container{
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: 9rem;
+  grid-template-columns: repeat(12 1fr);
+  
+  grid-template-areas:
+    "aside-menu header  header header header  header header  header  header  header  header header"
+    "aside-menu categories    categories   categories   categories    categories   categories    categories    categories    categories    categories   categories "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+    "aside-menu main    main   main   main    main   main    main    main    main    main   main "
+  ;
+  
+}
+
+.heder-container{
+  grid-area:  header;
+  margin-left: 15rem;
+  width: 110rem;
+
+  
+}
+.categories-container{
+  grid-area: categories;
+  height: 1rem;
+  margin-left: 15rem;
+  width: 110rem;
+
+}
+
+.menu-container{
+  grid-area:  aside-menu;
+  position: fixed;
+  
+}
+.main-container{
+  grid-area: main;
+  margin-left: 15rem;
+
+  
+}
+
+main{
+  padding: 2rem;
+  width: 1100px;
+
+}
+
+.form-group{
+  display: flex;
+}
+
+
+.formulario{
+  width: 30rem;
+  padding: 1.8rem;
+  margin-left: 4rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+background-color: #fff;
+
+  border-radius: 10px;
+  border-color: var(--color-background-1);
+}
+.legend-form{
+  font-size: var(--m-xl);
+  color:  var(--color-background-1);
+}
+
+.formulario__input{
+  height: 4rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.formulario__input input::-webkit-input-placeholder{
+  
+  font-size: 1rem;
+}
+.input-txt{
+  height: 4rem;
+  padding: 0.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-background-1);
+  border-radius: 5px;
+}
+.input-txt input{
+  border: none;
+  outline: none;
+}
+
+.form__dates{
+  padding: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+
+  border-radius: 10px;
+}
+.form__dates{
+  border-color: var(--color-background-1);
+
+}
+.legend-date{
+  font-size: 1.8rem;
+  
+}
+
+.formulario i{
+  color: var(--color-background-1);
+}
+
+.form__i-date{
+  border: none;
+  outline: none;
+  
+}
+
+.form__select{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  outline: none;
+  border-color: var(--color-background-1) ;
+  font-size: 1.2rem;
+  border: none;
+
+}
+.form-select--borde{
+  height: 40px;
+  padding: 0.4rem;
+  border: 1px solid var(--color-background-1);
+  border-radius: 5px;
+}
+
+.form__btn{
+  margin-top: 8px;
+  padding: 8px;
+  background-color: var(--color-background-1);
+  color: var(--color-font-2);
+  border-color: var(--color-background-1);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 250ms;
+
+}
+.form__btn:hover{
+  background-color: var(--color-background-2);
+  color: var(--color-font-1);
+
+}
+
+
+
+
+.form__radio-btn{
+  display: flex;
+  gap: .4rem;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- -------------------------------- cdns --------------------------------- -->
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------------------------------- fonts -------------------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------------- css --------------------------------- -->
+  <link rel="stylesheet" href="./styles .css">
+
+  <link rel="stylesheet" href="../side-bar-menu/styles .css">
+  <link rel="stylesheet" href=".././../css/layout.css">
+  <!-- ----------------------------------------------------------------------- -->
+  <title>Product card</title>
+</head>
+<body class='body__container'>
+  
+  <main class='main-container'>
+    <section class='container_product-card'>
+
+      <div class='card-product'>
+        <figure>
+          <img class='card-product__img' src="../../img/products/1-pedigree.svg" alt="">
+        </figure>
+        <div class="card-product__content-txt">
+
+          <div class='card-product__text-main'>
+
+            <p class='card-product__title'>Max Vita - Alimento Perro Cachorro Crecimiento Saludable Pollo</p>
+            <p class='card-product__stars'>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+
+          <div class='card-product__footer'>
+            <div class='card-product__total'>
+              <p> $ 32.000</p>
+            </div>
+
+            <div class='card-product__btn-cont'>
+              <p class='card-product__btn-add-shopping'>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </p>
+              <p id='fav-icon' class='card-product__btn-add-fav'>
+                <i id='fav-i' class="fa-regular fa-heart"></i>
+                <!--Corazon ative  <i class="fa-solid fa-heart"></i> -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src='./script.js'></script>
+</body>
+
+</html>

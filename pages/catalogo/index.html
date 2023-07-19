@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- -------------------------------- cdns --------------------------------- -->
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------------------------------- fonts -------------------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
+
+  <!-- --------------------------------- css --------------------------------- -->
+  <link rel="stylesheet" href="../../components/side-bar-menu/styles.css">
+  <link rel="stylesheet" href="../../components/search-bar/styles.css">
+  <link rel="stylesheet" href="../../components/header-btns/styles.css">
+  <!-- <link rel="stylesheet" href="../../css/layout.css"> -->
+
+  <link rel="stylesheet" href="../../components/product-card/styles.css">
+  <link rel="stylesheet" href="../../components/categories-btns/styles.css">
+  <link rel="stylesheet" href="../../components/shopping-car/styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/x-icon" href="../../img/Imagotipo.png" />
+  
+  <title>Catalogo</title>
+
+</head>
+
+<body class='body__container'>
+
+  <!-- ---------------------------- shopping car ----------------------------- -->
+  <div class='shopping_cart hidden'>
+    <div class='shopping_cart__header'>
+      <i class="fa-solid fa-arrow-left"></i>
+      <h3>Carrito de compras</h3>
+
+    </div>
+
+    <div class='shopping_cart__list'>
+       
+
+    </div>
+
+
+    <div class='shopping_cart__footer'>
+      <div class='shopping_cart__total'>
+        <p>Total: $<span class='shopping_car__total-text'> </span> </p>
+      </div >
+      <div class='shopping_cart__btn-pay'>
+        <p> Ir a Pagar</p>
+      </di>
+    </div>
+  </div>
+  
+
+  </div>
+<!-- ----------------------------------------------------------------------- -->
+
+  <!-- ------------------------------- header -------------------------------- -->
+  <header class='heder-container'>
+    <!-- -------------------------- barra de busqueda -------------------------- -->
+    <div class="main--searcher">
+
+      <div class="main-searcher__input-container search-container">
+
+        <p class='main--searcher__ico'>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </p>
+
+        <input type="text" id="search-input" placeholder=" ¿Qué necesita tu mascota? ">
+
+        <ul id="suggestions-list"></ul>
+
+        </a>
+      </div>
+
+
+
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <section class='header__btns'>
+      
+
+      <div class='heder__container-btns'>
+        <div  class='header_btn_shoppin-cart'>
+          <i class="fa-solid fa-bag-shopping"></i>
+
+
+        </div>
+
+        <div class='header_btn_fav'>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class='header_btn_alerts'>
+          <i class="fa-regular fa-bell"></i>
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <div class="header__user">
+      <p>¡Bienvenido,<br> Usuario!</p>
+      <a href='https://ariaxviii.github.io/registroUsuario/' class='header__btn-user'>
+        <p></p>
+        <i class="fa-solid fa-user"></i>
+      </a>
+      
+    </div>
+
+    
+    
+
+  </header>
+  
+  <!-- ----------------------------- categorias ------------------------------ -->
+  <section class='categories-container'>
+    <h3>Categorias</h3>
+
+    <div class='categories__btns-container'>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-solid fa-bowl-food"></i>
+        </div>
+        <p class='categories__text'> Alimento</p>
+      </div>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-solid fa-bone"></i>
+        </div>
+        <p class='categories__text'> Snacks</p>
+      </div>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-sharp fa-solid fa-baseball"></i>
+
+        </div>
+        <p class='categories__text'> Juguetes</p>
+      </div>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <p class='categories__text'> Accesorios</p>
+      </div>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-solid fa-house-medical"></i>
+        </div>
+        <p class='categories__text'> FarmaPet</p>
+      </div>
+
+      <div class='categories__btn'>
+        <div class='categories__icon'>
+          <i class="fa-solid fa-pump-soap"></i>
+        </div>
+        <p class='categories__text'> Higiene</p>
+      </div>
+    </div>
+
+  
+  </section>
+  <!-- ----------------------------------------------------------------------- -->
+
+  <!-- -------------------------------- menu --------------------------------- -->
+  <aside class='menu-container'>
+    <nav class='menu__nav'>
+      <figure class=' menu__img-container'>
+        <img class='menu__img-icon' src="../../img/Imagotipo.png" alt="Logo fluffy perrito" />
+      </figure>
+      <div class='menu__options-container'>
+
+
+        <a href='../../index.html' class="menu__item-text ">
+          <h3>
+            <i class="fas fa-poll-h"></i>
+            <span>Inicio</span>
+          </h3>
+        </a>
+
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-dog"></i>
+            <span class="nav-item">Perro</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-cat"></i>
+            <span class="nav-item">Gato</span>
+          </h3>
+        </a>
+
+        <a href='#' id='menu__products' class="menu__item-text active">
+          <h3>
+            <i class="fas fa-bone"></i>
+            <span class="nav-item">Productos</span>
+          </h3>
+        </a>
+
+        <a href='' class="menu__item-text">
+          <h3>
+            <i class="fas fa-briefcase-medical"></i>
+            <span class="nav-item">Servicios</span>
+          </h3>
+        </a>
+
+        <a href='../../pages/nosotros/index.html' class="menu__item-text">
+          <h3>
+            <i class="fas fa-user-friends"></i>
+            <span class="nav-item">Nosotros</span>
+          </h3>
+        </a>
+
+        <a href='https://ariaxviii.github.io/tarea5-Formulario/' class="menu__item-text">
+          <h3>
+            <i class="fa-solid fa-phone"></i>
+            <span class="nav-item">Contacto</span>
+          </h3>
+        </a>
+      </div>
+
+    </nav>
+  </aside>
+  <!-- fin menu ----------------------------------------------------------------------- -->
+
+  <main class='main-container'>
+
+
+    <section class='products-container'>
+      <div class='container_product-card'>
+        <!-- --------------- Aca se renderizan los productos desde js --------------- -->
+      </div>
+
+    </section>
+  </main>
+  <script src='./script.js'></script>
+  <script src='../../components/side-bar-menu/script.js'></script>
+  <script src='../../components/shopping-car/script.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script src='../../components/product-card/script.js'></script> -->
+</body>
+
+</html>
