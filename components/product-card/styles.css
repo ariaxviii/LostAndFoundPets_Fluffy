@@ -86,7 +86,6 @@ body{
 }
 .card-product__text-main{
   text-align: center;
-  padding: var(--xl) ;
 }
 .card-product__title{
   font-size: var(--font-size-m);
@@ -98,20 +97,20 @@ body{
   text-shadow: 1px 2px var(--color-black);
 }
 .card-product__footer{
-  padding:   var(--xl) ;
+  padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .card-product__total{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
-}
+  }
 .card-product__btn-cont{
   display: flex;
   font-size: var(--font-size-l);
-  gap: var(--xxl);
+  gap: 1rem;
 }
 .card-product__btn-add-shopping,
 .card-product__btn-add-fav {

@@ -53,7 +53,7 @@ html {
 /* -------------------------- contenerdor principal ------------------------- */
 .menu-container{
   width: 16rem;
-  height: 100vh;
+  height: 1000vh;
   background-color: var(--color-light);
 
 
@@ -89,12 +89,11 @@ html {
   margin: var(--s) 0;
   transition: all 300ms;
   color: var(--font-color-light);
-
-
+  font-size: 1.5rem;
 }
 
 .menu__item-text:hover{
-  text-shadow: 1px 1px  var(--color-secondary);
+  text-shadow: 2px 2px  var(--color-secondary);
 
 }
 
